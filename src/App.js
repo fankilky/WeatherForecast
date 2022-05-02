@@ -1,17 +1,18 @@
-// import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import NineDaysForecast from "./pages/NineDaysForecast";
 import CurrentWeather from "./pages/CurrentWeather";
 import SunriseSunset from "./pages/SunriseSunset";
 
-
 function App() {
-  return (
+
+    return (
     <div className="App">
-      <h1>NineDaysForecast</h1>
+      <h1>Hong Kong Weather Forecast</h1>
+      <h2 className="title">Nine Days Forecast</h2>
       <NineDaysForecast />
-      <h1>CurrentWeather</h1>
+      <h2 className="title">Current Weather by Region</h2>
       <CurrentWeather />
-      <h1>SunriseSunset</h1>
+      <h2 className="title">Sunrise and Sunset</h2>
       <SunriseSunset />
     </div>
   );

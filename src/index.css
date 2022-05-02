@@ -1,13 +1,133 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(24, 75, 147, 0.5);
+  margin: 0 4%;
+  background-image: url(../public/background.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1{
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
+
+p{
+  margin: 0
+}
+
+/* NineDaysForecast */
+.title{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size:1.5rem;
+  margin: 3% 0
+}
+
+.forecast_card{
+  border: solid 1px #000000;
+  border-radius: 5px;
+  margin: 1% 0.5%;
+  padding: 1% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  background-color: #8d8d8d6e;
+  min-width: 120px;
+  max-width:130px;
+  flex-wrap: wrap;
+}
+
+.forecast_icon{
+  width:100px;
+}
+
+.forecast_temp_icon{
+  padding-right: 7px;
+}
+
+/* CurrentWeather */
+.search_container{
+  margin: 0 20%;
+}
+
+.search_dropbox, .region_weather{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 3% 0;
+}
+
+.search_label{
+  margin-bottom:2%
+}
+
+.search_select{
+  padding: 2%;
+  border-radius: 20px;
+  background-color: #a8b8c9;
+}
+
+.region_weather_box{
+  width:60%;
+  border: 1px solid #000000;
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding:4% 0;
+  background-color: #ffffffa1;}
+
+.region_place{
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.region_temp_container, .forecast_temp_container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.region_temp_icon{
+  font-size: 3rem;
+}
+
+.region_temp{
+  font-size: 3rem;
+  font-weight:700;
+  padding-left: 10px;
+}
+
+
+/* Sunrise Sunset */
+.SunriseSunset_container{ 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SunriseSunset_btn{
+  margin: 1% 0.5%;
+  padding: 0.5% 1%;
+  border-radius: 15px;
+  border: 1px solid rgb(156, 142, 54);
+  background-color: rgb(216 205 131);}
+
+.SunriseSunset_btn:hover { 
+  background-color:rgb(250, 255, 183)
+
+}
+
+.graph_container{
+  height: 600px;
+  margin: 1% 0;
+}
+

@@ -22,7 +22,6 @@ export default function CurrentWeather() {
   const getRegion = (e) => {
     setRegion(e.currentTarget.value);
     setFiltered(current[e.currentTarget.value])
-    console.log(`filtered`,filtered)
   };
 
 

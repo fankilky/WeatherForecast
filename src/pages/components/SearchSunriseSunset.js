@@ -24,7 +24,6 @@ export default function SearchSunriseSunset(props) {
             for (let i = 0; i < yearData.length; i++) {
                 sunriseStat.push({"x":yearData?.[i]?.[0],"y":yearData?.[i]?.[1]})
             };
-                console.log(`sunriseStat`,sunriseStat)
                 
         }, [yearData]);
 
@@ -34,7 +33,6 @@ export default function SearchSunriseSunset(props) {
             for (let i = 0; i < yearData.length; i++) {
                 sunsetStat.push({"x":yearData?.[i]?.[0],"y":yearData?.[i]?.[3]})
             };
-            console.log(`sunsetStat`,sunsetStat)
         }, [yearData]);
 
         const data = [

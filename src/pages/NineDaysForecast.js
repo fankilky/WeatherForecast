@@ -16,7 +16,6 @@ export default function NineDaysForecast() {
     axios.get(baseURL).then((response) => {
         setForecast(response.data.weatherForecast);
         setloading(false);
-      console.log(response.data.weatherForecast)
     });
   }, []);
 
